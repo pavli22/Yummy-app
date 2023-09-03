@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fav-icon -->
+    <link rel="icon" href="img/logo.png" />
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <!-- Main section -->
+    <div class="loading-screen">
+      <span class="loader"></span>
+    </div>
+    <main>
+      <div class="container mt-5 overflow-hidden">
+        <!-- main-section -->
+        <div class="row g-3 main-section"></div>
+        <!-- target-section -->
+        <div class="row target-section text-white d-none"></div>
+
+        <!-- search -->
+        <div class="row g-3 search-section d-none">
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control SN position-relative"
+                placeholder="Search By Name"
+                aria-label="Search"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control SF position-relativel"
+                placeholder="Search By first Latter"
+                aria-label="Search"
+                maxlength="1"
+              />
+            </div>
+          </div>
+          <div class="get-here row g-3"></div>
+        </div>
+        <!-- category -->
+        <div class="row g-3 category-section d-none"></div>
+        <!-- area -->
+        <div class="row g-3 area-section text-white d-none"></div>
+        <!-- ingredients -->
+        <div class="row g-3 ingredients-section text-white d-none"></div>
+      </div>
+      <!-- contact -->
+      <div
+        class="container contact-container vh-100 d-flex align-items-center justify-content-center w-75 d-none"
+      >
+        <form
+          action="
+      "
+        >
+          <div class="row contact-section text-white">
+            <div class="col-md-6">
+              <div class="input-Name mb-3">
+                <input
+                  type="text"
+                  class="form-control position-relative"
+                  placeholder="Enter Your Name"
+                />
+                <p class="warning-message p-3 my-2 mb-5 rounded-2">
+                  Special characters and numbers not allowed
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-Email mb-3">
+                <input
+                  type="email"
+                  class="form-control position-relativel"
+                  placeholder="Enter Your Email"
+                />
+                <p class="warning-message p-3 my-2 mb-5 rounded-2">
+                  Email not valid *exemple@yyy.zzz
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-Phone mb-3">
+                <input
+                  type="text"
+                  class="form-control position-relative"
+                  placeholder="Enter Your phone"
+                />
+                <p class="warning-message p-3 my-2 mb-5 rounded-2">
+                  Enter valid Phone Number
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-Age mb-3">
+                <input
+                  type="number"
+                  class="form-control position-relativel"
+                  placeholder="Enter Your age"
+                />
+                <p class="warning-message p-3 my-2 mb-5 rounded-2">
+                  Enter valid age
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-Pass mb-3">
+                <input
+                  type="password"
+                  class="form-control position-relativel"
+                  placeholder="Enter Your password"
+                />
+                <p class="warning-message p-3 my-2 mb-5 rounded-2">
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-Repass mb-3">
+                <input
+                  type="password"
+                  class="form-control position-relativel"
+                  placeholder="Repassword"
+                />
+                <p class="warning-message p-3 my-2 mb-5 rounded-2">
+                  Enter valid re-password
+                </p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="button-Submit">
+                <button class="btn btn-outline-danger d-block mx-auto disabled">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- side-bar -->
+      <nav class="side-nav d-flex flex-row-reverse">
+        <div class="right p-2">
+          <div
+            class="content d-flex flex-column align-items-center justify-content-between h-100"
+          >
+            <div class="icon">
+              <img src="img/logo.png" class="w-100 d-block" alt="icon-page" />
+            </div>
+            <div class="btn-slidIn text-black">
+              <i class="fa-solid fa-bars-staggered fa-2x"></i>
+            </div>
+            <div class="btn-slidOut text-black d-none">
+              <i class="fa-solid fa-x fa-2x"></i>
+            </div>
+            <div class="contect-info">
+              <i class="fa-solid fa-globe d-block"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+        </div>
+        <div class="left text-white p-3 w-100">
+          <div
+            class="content p-3 d-flex flex-column justify-content-between h-100"
+          >
+            <ul
+              class="list-unstyled dynamic d-flex flex-column gap-3 animate__animated mt-4"
+            >
+              <li class="animate__animated">Search</li>
+              <li class="animate__animated">Categories</li>
+              <li class="animate__animated">Area</li>
+              <li class="animate__animated">Ingredients</li>
+              <li class="animate__animated">Contact Us</li>
+            </ul>
+            <div class="content-media-info">
+              <ul class="list-unstyled d-flex gap-1 my-0">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-solid fa-globe"></i></li>
+              </ul>
+              <p>Copyright Pavli-tharwat© 2023 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
